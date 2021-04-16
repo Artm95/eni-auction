@@ -44,7 +44,7 @@ CREATE TABLE UTILISATEURS (
     credit           INTEGER NOT NULL,
     administrateur   bit NOT NULL,
 	CONSTRAINT UC_pseudo UNIQUE(pseudo),
-	CONSTRAINT UC_pseudo UNIQUE(email)   
+	CONSTRAINT UC_email UNIQUE(email)   
 )
 
 ALTER TABLE UTILISATEURS ADD constraint utilisateur_pk PRIMARY KEY (no_utilisateur)
